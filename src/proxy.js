@@ -11,7 +11,7 @@ export async function proxy(request) {
         headers: await headers()
     })
 
-    // const isLogin = false;
+    // const isLogin = false; clear that also
     if(session){
         return NextResponse.next();
     }
